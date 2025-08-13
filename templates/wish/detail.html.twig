@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détail du souhait{% endblock %}
+
+{% block body %}
+    <div class="container mt-4">
+        <h1 class="mb-3">{{ wish.title }}</h1>
+
+        <p><strong>Description :</strong></p>
+        <p>{{ wish.description }}</p>
+
+        <a href="{{ path('wish_list') }}" class="btn btn-secondary mt-3">← Retour à la liste</a>
+    </div>
+{% endblock %}

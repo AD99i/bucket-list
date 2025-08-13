@@ -18,12 +18,12 @@
     <body>
     <header>
         <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="{{ path('app_main') }}">
-                    <img src="{{ asset('/images/logo.png') }}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    Bucket-List
-                </a>
-            </div>
+            <form class="container-fluid justify-content-start">
+                <img src="{{ asset('/images/logo.png') }}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-4">
+                <a class="navbar-brand" href="{{ path('app_main') }}"><button class="btn btn-outline-primary me-2" type="button">Bucket List</button></a>
+                <a class="navbar-brand" href="{{ path('wish_list') }}"><button class="btn btn-outline-primary me-2" type="button">Liste des souhaits</button></a>
+                <a class="navbar-brand" href="{{ path('app_about') }}"><button class="btn btn-outline-primary me-2" type="button">About us</button></a>
+            </form>
         </nav>
     </header>
 

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des souhaits{% endblock %}
+
+{% block body %}
+    <div class="container mt-4">
+        <h1 class="mb-4">Toutes les idées à réaliser</h1>
+
+        <ul class="list-group">
+            {% for wish in wishes %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    {{ wish.title }}
+                    <a href="{{ path('wish_detail', { id: wish.id }) }}" class="btn btn-sm btn-primary">Voir détail</a>
+                </li>
+            {% else %}
+                <li class="list-group-item">Aucune idée pour le moment.</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
