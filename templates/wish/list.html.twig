@@ -6,15 +6,33 @@
     <div class="container mt-4">
         <h1 class="mb-4">Toutes les idées à réaliser</h1>
 
-        <ul class="list-group">
-            {% for wish in wishes %}
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    {{ wish.title }}
-                    <a href="{{ path('wish_detail', { id: wish.id }) }}" class="btn btn-sm btn-primary">Voir détail</a>
-                </li>
-            {% else %}
-                <li class="list-group-item">Aucune idée pour le moment.</li>
-            {% endfor %}
-        </ul>
+        {% if wishes is not empty %}
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Titre</th>
+                    <th>Auteur</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for wish in wishes %}
+                    <tr>
+                        <td>{{ wish.title }}</td>
+                        <td>{{ wish.author }}</td>
+                        <td>
+                            <a href="{{ path('wish_detail', { id: wish.id }) }}" class="btn btn-sm btn-primary">
+                                Voir détail
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="alert alert-info">
+                Aucune idée pour le moment.
+            </div>
+        {% endif %}
     </div>
 {% endblock %}

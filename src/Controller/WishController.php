@@ -2,31 +2,28 @@
 
 namespace App\Controller;
 
+use App\Repository\WishRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 #[Route('/wishes', name: 'wish')]
 final class WishController extends AbstractController
 {
-    private array $fakeWishes = [
-        ['id' => 1, 'title' => 'Voir les aurores boréales', 'description' => 'Voyager en Islande pour observer les aurores boréales.'],
-        ['id' => 2, 'title' => 'Faire un saut en parachute', 'description' => 'Expérience extrême à vivre au moins une fois dans sa vie.'],
-        ['id' => 3, 'title' => 'Écrire un roman', 'description' => 'Publier un livre qui raconte une histoire inspirante.'],
-    ];
+
 
     #[Route('/', name: '_list')]
-    public function list(): Response
+    public function list(WishRepository $wishRepository): Response
     {
+        $wishes = $wishRepository->findAll();
         return $this->render('wish/list.html.twig', [
-            'wishes' => $this->fakeWishes,
+            'wishes' => $wishes,
         ]);
     }
 
     #[Route('/{id}', name: '_detail',requirements: ['id' => '\d+'])]
-    public function detail(int $id): Response
+    public function detail(int $id,WishRepository $wishRepository): Response
     {
-        $wish = array_filter($this->fakeWishes, fn($w) => $w['id'] === $id);
-        $wish = reset($wish); // récupère le premier élément
+        $wish = $wishRepository->find($id);
 
         if (!$wish) {
             throw $this->createNotFoundException("Souhait avec l'ID $id introuvable.");
