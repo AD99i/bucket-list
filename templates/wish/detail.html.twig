@@ -4,10 +4,28 @@
 
 {% block body %}
     <div class="container mt-4">
-        <h1 class="mb-3">{{ wish.title }}</h1>
+        <h1 class="mb-4">Détail de l'idée</h1>
 
-        <p><strong>Description :</strong></p>
-        <p>{{ wish.description }}</p>
+        <table class="table table-bordered table-striped">
+            <tbody>
+            <tr>
+                <th style="width: 200px;">Titre</th>
+                <td>{{ wish.title }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ wish.description }}</td>
+            </tr>
+            <tr>
+                <th>Auteur</th>
+                <td>{{ wish.author }}</td>
+            </tr>
+            <tr>
+                <th>Date de création</th>
+                <td>{{ wish.dateCreated|date('d/m/Y H:i') }}</td>
+            </tr>
+            </tbody>
+        </table>
 
         <a href="{{ path('wish_list') }}" class="btn btn-secondary mt-3">← Retour à la liste</a>
     </div>
