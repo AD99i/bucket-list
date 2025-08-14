@@ -1,19 +1,79 @@
-body{
+/* Structure globale */
+html, body {
     margin: 0;
-    min-height: 100vh;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main{
+/* Contenu principal */
+main {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    padding: 40px 20px;
 }
-footer{
-    position: absolute;
-    bottom: 0;
+
+/* Footer toujours en bas */
+footer {
     width: 100%;
     text-align: center;
-    padding: 10px;
-    background-color: #f1f1f1;}
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #00c9a7 0%, #007cf0 100%);
+    color: white;
+    padding: 80px 0;
+    border-radius: 0 0 30px 30px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.25rem;
+}
+.hero img {
+    max-width: 80%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Cartes */
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.card i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}

@@ -1,11 +1,32 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}About us !{% endblock %}
+{% block title %}À propos{% endblock %}
 
 {% block body %}
-    <div class="container-xxl">
-        <h1 class="mt-5">About us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cum ex nisi quasi voluptatum. Ad alias aperiam architecto aspernatur commodi consectetur consequuntur dolore esse facilis fuga id illo labore magnam magni, neque nesciunt nihil omnis perspiciatis quam qui quis quisquam quos sint tempore vel velit voluptates. Dignissimos explicabo repellat veritatis.</p>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="display-5 fw-bold mb-4 text-center">À propos de ce projet</h1>
+                <p class="lead text-center">Ce site web est une application Symfony conçue pour vous aider à créer et suivre votre <strong>Bucket List</strong> — une liste de rêves, d’objectifs et d’expériences à vivre.</p>
+                <p>Mais ce n’est pas tout ! Ce projet est aussi un <strong>exercice pédagogique</strong> réalisé dans le cadre d’un apprentissage du framework Symfony. Il combine :</p>
+                <ul class="list-unstyled ms-3">
+                    <li><i class="bi bi-check-circle text-success me-2"></i> Utilisation de Twig pour le templating</li>
+                    <li><i class="bi bi-check-circle text-success me-2"></i> Intégration de Bootstrap 5 pour le design</li>
+                    <li><i class="bi bi-check-circle text-success me-2"></i> Routage, contrôleurs et entités Symfony</li>
+                    <li><i class="bi bi-check-circle text-success me-2"></i> Création dynamique de souhaits</li>
+                </ul>
+                <p class="mt-3">L’objectif est de pratiquer tout en créant une interface utile et agréable à utiliser.</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Pourquoi une Bucket List ?</h2>
+            <p class="lead">Parce que la vie est faite pour être vécue pleinement. Ce site vous invite à rêver, planifier et accomplir ce qui compte vraiment pour vous.</p>
+            <a href="{{ path('wish_list') }}" class="btn btn-primary btn-lg mt-3">
+                <i class="bi bi-stars me-2"></i> Voir ma liste de souhaits
+            </a>
+        </div>
     </div>
 {% endblock %}

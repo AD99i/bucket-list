@@ -1,11 +1,54 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Page Main !{% endblock %}
+{% block title %}Ma Bucket List{% endblock %}
 
 {% block body %}
-    <div class="container-xxl">
-        <h1 class="mt-5">Page Main</h1>
-        <p>Bienvenue sur la page principale de l'application !</p>
-        <p>Utilisez le menu pour naviguer dans les différentes sections.</p>
+    <style>
+
+    </style>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Bienvenue sur <span class="text-warning">Ma Bucket List</span></h1>
+            <p class="lead mt-3">Notez vos rêves, vos défis, vos envies… et commencez à les réaliser !</p>
+            <a href="#" class="btn btn-light btn-lg mt-4">
+                <i class="bi bi-plus-circle me-2"></i> Créer une nouvelle envie
+            </a>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <h2 class="text-center mb-5">🌍 Exemples d’objectifs populaires</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <i class="bi bi-airplane display-4 text-primary mb-3"></i>
+                    <h5 class="card-title">Voyager au Japon</h5>
+                    <p class="card-text">Découvrir Tokyo, Kyoto et les cerisiers en fleurs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <i class="bi bi-book display-4 text-success mb-3"></i>
+                    <h5 class="card-title">Écrire un livre</h5>
+                    <p class="card-text">Partager votre histoire ou vos idées avec le monde.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <i class="bi bi-heart-pulse display-4 text-danger mb-3"></i>
+                    <h5 class="card-title">Courir un marathon</h5>
+                    <p class="card-text">Se dépasser physiquement et mentalement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5">
+        <h3>🎯 Prêt à commencer ta liste ?</h3>
+        <p>Il n’est jamais trop tôt pour rêver grand.</p>
+        <a href="#" class="btn btn-primary btn-lg mt-3">
+            Voir ma liste
+        </a>
     </div>
 {% endblock %}
