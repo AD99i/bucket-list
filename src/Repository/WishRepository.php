@@ -17,7 +17,7 @@ class WishRepository extends ServiceEntityRepository
     }
 
     //    /**
-    //     * @return Wish[] Returns an array of Wish objects
+    //     * @return WishFixtures[] Returns an array of WishFixtures objects
     //     */
     //    public function findByExampleField($value): array
     //    {
@@ -31,7 +31,7 @@ class WishRepository extends ServiceEntityRepository
     //        ;
     //    }
 
-    //    public function findOneBySomeField($value): ?Wish
+    //    public function findOneBySomeField($value): ?WishFixtures
     //    {
     //        return $this->createQueryBuilder('w')
     //            ->andWhere('w.exampleField = :val')
