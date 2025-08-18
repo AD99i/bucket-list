@@ -30,14 +30,27 @@
             <a href="{{ path('wish_list') }}" class="btn btn-outline-light">
                 <i class="bi bi-stars me-1"></i> Liste des souhaits
             </a>
+            <a href="{{ path('wish_create') }}" class="btn btn-outline-light">
+                <i class="bi bi-plus-circle me-1"></i> Ajouter un souhait
+            </a>
             <a href="{{ path('app_about') }}" class="btn btn-outline-light">
                 <i class="bi bi-info-circle me-1"></i> À propos
             </a>
+
         </div>
     </div>
 </header>
 
-<main class="flex-grow-1">
+<main class="container">
+    {% for type, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {% endfor %}
+
     {% block body %}{% endblock %}
 </main>
 
