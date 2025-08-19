@@ -63,5 +63,10 @@ final class WishController extends AbstractController
             'wish_form' => $form,
         ]);
     }
+    #[Route('/delete/{id}', name: '_delete', requirements: ['id' => '\d+'])]
+    public function delete(): Response{
+
+        return $this->redirectToRoute('wish_list');
+    }
 
 }

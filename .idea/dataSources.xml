@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="bucketList@localhost" uuid="c923f20a-8d41-4c7c-be6b-a1fd610a5afa">
+    <data-source source="LOCAL" name="bucketlist@localhost" uuid="8e6f5241-cb9f-41ac-a8aa-507186bd30fa">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/bucketList</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/bucketlist</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

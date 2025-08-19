@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<framework xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/frameworkDescriptionVersion1.1.4.xsd" frameworkId="com.symfony" name="Symfony_12/08/2025 11:53" invoke="9b8c8558-6f88-4a6f-a894-6a45ff55f659 D:/PROG/WSPHPSYMFONY/bucket-list/bin/console" alias="symfony" enabled="true" version="2">
+<framework xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/frameworkDescriptionVersion1.1.4.xsd" frameworkId="com.symfony" name="Symfony_19/08/2025 10:17" invoke="1ba8cc8a-85e5-411e-b984-b91d98a97dfe D:/PROG/WSPHPSYMFONY/bucket-list/bin/console" alias="symfony" enabled="true" version="2">
   <extraData><![CDATA[version:3]]></extraData>
   <command>
     <name>_complete</name>
@@ -1589,6 +1589,60 @@
       </option>
       <option name="--force" shortcut="-f">
         <help><![CDATA[Set this parameter to execute this action]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force (or disable --no-ansi) ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Negate the "--ansi" option]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="-e" pattern="equals">
+        <help><![CDATA[The Environment name.]]></help>
+      </option>
+      <option name="--no-debug" shortcut="">
+        <help><![CDATA[Switch off debug mode.]]></help>
+      </option>
+      <option name="--profile" shortcut="">
+        <help><![CDATA[Enables profiling (requires debug).]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>doctrine:fixtures:load</name>
+    <help><![CDATA[The <b>doctrine:fixtures:load</b> command loads data fixtures from your application:<br> <br> <b>php D:/PROG/WSPHPSYMFONY/bucket-list/bin/console doctrine:fixtures:load</b><br> <br> Fixtures are services that are tagged with <comment>doctrine.fixture.orm</comment>.<br> <br> If you want to append the fixtures instead of flushing the database first you can use the <comment>--append</comment> option:<br> <br> <b>php D:/PROG/WSPHPSYMFONY/bucket-list/bin/console doctrine:fixtures:load</b> <comment>--append</comment><br> <br> By default Doctrine Data Fixtures uses DELETE statements to drop the existing rows from the database.<br> If you want to use a TRUNCATE statement instead you can use the <comment>--purge-with-truncate</comment> flag:<br> <br> <b>php D:/PROG/WSPHPSYMFONY/bucket-list/bin/console doctrine:fixtures:load</b> <comment>--purge-with-truncate</comment><br> <br> To execute only fixtures that live in a certain group, use:<br> <br> <b>php D:/PROG/WSPHPSYMFONY/bucket-list/bin/console doctrine:fixtures:load</b> <comment>--group=group1</comment><br> <br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--append</td><td></td><td>Append the data fixtures instead of deleting all data from the database first.</td></tr> <tr><td>--group</td><td></td><td>Only load fixtures that belong to this group</td></tr> <tr><td>--em</td><td></td><td>The entity manager to use for this command.</td></tr> <tr><td>--purger</td><td></td><td>The purger to use for this command</td></tr> <tr><td>--purge-exclusions</td><td></td><td>List of database tables to ignore while purging</td></tr> <tr><td>--purge-with-truncate</td><td></td><td>Purge data by using a database-level TRUNCATE statement</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display help for the given command. When no command is given display help for the <b>list</b> command</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force (or disable --no-ansi) ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Negate the "--ansi" option</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td>(-e)</td><td>The Environment name.</td></tr> <tr><td>--no-debug</td><td></td><td>Switch off debug mode.</td></tr> <tr><td>--profile</td><td></td><td>Enables profiling (requires debug).</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--append" shortcut="">
+        <help><![CDATA[Append the data fixtures instead of deleting all data from the database first.]]></help>
+      </option>
+      <option name="--group" shortcut="" pattern="equals">
+        <help><![CDATA[Only load fixtures that belong to this group]]></help>
+      </option>
+      <option name="--em" shortcut="" pattern="equals">
+        <help><![CDATA[The entity manager to use for this command.]]></help>
+      </option>
+      <option name="--purger" shortcut="" pattern="equals">
+        <help><![CDATA[The purger to use for this command]]></help>
+      </option>
+      <option name="--purge-exclusions" shortcut="" pattern="equals">
+        <help><![CDATA[List of database tables to ignore while purging]]></help>
+      </option>
+      <option name="--purge-with-truncate" shortcut="">
+        <help><![CDATA[Purge data by using a database-level TRUNCATE statement]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display help for the given command. When no command is given display help for the <b>list</b> command]]></help>

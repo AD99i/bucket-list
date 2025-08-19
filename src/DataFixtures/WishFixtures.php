@@ -20,9 +20,9 @@ class WishFixtures extends Fixture
             $wish->setTitle($faker->realText(30,true))
                 ->setDescription($faker->paragraph(2))
                 ->setAuthor($faker->name())
-                ->setIsPublished($faker->boolean())
-                ->setDateCreated($faker->dateTimeBetween('-20 years', '-1 month'))
-                ->setDateUpdated($faker->dateTimeBetween('-20 years', '-1 month'));
+                ->setIsPublished($faker->boolean());
+                //->setDateCreated($faker->dateTimeBetween('-20 years', '-1 month'))
+                //->setDateUpdated($faker->dateTimeBetween('-20 years', '-1 month'));
 
 
             $manager->persist($wish);
