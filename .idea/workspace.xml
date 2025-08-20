@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7beaf0d-5d8d-45d2-95c7-aa63f8a05d79" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bucket-list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bucket-list.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_12_08_2025_11_53.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/wish/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e6f5241-cb9f-41ac-a8aa-507186bd30fa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e6f5241-cb9f-41ac-a8aa-507186bd30fa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20250813142202.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/WishController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WishController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/WishFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/WishFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Wish.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Wish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/WishType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/WishType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/wish/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wish/detail.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/wish/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wish/list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/AD99i/bucket-list.git&quot;,
-    &quot;accountId&quot;: &quot;fb8388ee-e33f-4548-8d58-15a5dac37f0a&quot;
+    &quot;accountId&quot;: &quot;acd68ca0-7bdf-4750-b32e-f1d051e055fb&quot;
   }
 }</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:/wamp64/bin/php/php8.3.14/php.exe">
@@ -177,6 +177,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="31UvMY4h8xQXyhTPLnJFkzWFETl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -185,6 +188,7 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/PROG/WSPHPSYMFONY/bucket-list&quot;,
@@ -205,8 +209,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PS-252.23892.419" />
-        <option value="bundled-php-predefined-a98d8de5180a-c72577f2c82f-com.jetbrains.php.sharedIndexes-PS-252.23892.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PS-251.27812.52" />
+        <option value="bundled-php-predefined-a98d8de5180a-e5747d4f5a45-com.jetbrains.php.sharedIndexes-PS-251.27812.52" />
       </set>
     </attachedChunks>
   </component>
@@ -222,6 +226,8 @@
       <workItem from="1755594318287" duration="172000" />
       <workItem from="1755594710064" duration="106000" />
       <workItem from="1755595040261" duration="1248000" />
+      <workItem from="1755610515467" duration="93000" />
+      <workItem from="1755697420890" duration="3793000" />
     </task>
     <servers />
   </component>

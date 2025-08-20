@@ -2,101 +2,8 @@
 <dataSource name="bucketlist@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.53">
     <root id="1">
-      <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>MyISAM</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <Grants>|root||root|localhost|ALLOW_NONEXISTENT_DEFINER|G
-|root||root|localhost|ALTER|G
-|root||root|localhost|ALTER ROUTINE|G
-|root||root|localhost|APPLICATION_PASSWORD_ADMIN|G
-|root||mysql.infoschema|localhost|AUDIT_ABORT_EXEMPT|G
-|root||mysql.session|localhost|AUDIT_ABORT_EXEMPT|G
-|root||mysql.sys|localhost|AUDIT_ABORT_EXEMPT|G
-|root||root|localhost|AUDIT_ABORT_EXEMPT|G
-|root||root|localhost|AUDIT_ADMIN|G
-|root||mysql.session|localhost|AUTHENTICATION_POLICY_ADMIN|G
-|root||root|localhost|AUTHENTICATION_POLICY_ADMIN|G
-|root||mysql.session|localhost|BACKUP_ADMIN|G
-|root||root|localhost|BACKUP_ADMIN|G
-|root||root|localhost|BINLOG_ADMIN|G
-|root||root|localhost|BINLOG_ENCRYPTION_ADMIN|G
-|root||mysql.session|localhost|CLONE_ADMIN|G
-|root||root|localhost|CLONE_ADMIN|G
-|root||mysql.session|localhost|CONNECTION_ADMIN|G
-|root||root|localhost|CONNECTION_ADMIN|G
-|root||root|localhost|CREATE|G
-|root||root|localhost|CREATE ROLE|G
-|root||root|localhost|CREATE ROUTINE|G
-|root||root|localhost|CREATE TABLESPACE|G
-|root||root|localhost|CREATE TEMPORARY TABLES|G
-|root||root|localhost|CREATE USER|G
-|root||root|localhost|CREATE VIEW|G
-|root||root|localhost|DELETE|G
-|root||root|localhost|DROP|G
-|root||root|localhost|DROP ROLE|G
-|root||root|localhost|ENCRYPTION_KEY_ADMIN|G
-|root||root|localhost|EVENT|G
-|root||root|localhost|EXECUTE|G
-|root||root|localhost|FILE|G
-|root||mysql.infoschema|localhost|FIREWALL_EXEMPT|G
-|root||mysql.session|localhost|FIREWALL_EXEMPT|G
-|root||mysql.sys|localhost|FIREWALL_EXEMPT|G
-|root||root|localhost|FIREWALL_EXEMPT|G
-|root||root|localhost|FLUSH_OPTIMIZER_COSTS|G
-|root||root|localhost|FLUSH_PRIVILEGES|G
-|root||root|localhost|FLUSH_STATUS|G
-|root||root|localhost|FLUSH_TABLES|G
-|root||root|localhost|FLUSH_USER_RESOURCES|G
-|root||root|localhost|GROUP_REPLICATION_ADMIN|G
-|root||root|localhost|GROUP_REPLICATION_STREAM|G
-|root||root|localhost|INDEX|G
-|root||root|localhost|INNODB_REDO_LOG_ARCHIVE|G
-|root||root|localhost|INNODB_REDO_LOG_ENABLE|G
-|root||root|localhost|INSERT|G
-|root||root|localhost|LOCK TABLES|G
-|root||root|localhost|OPTIMIZE_LOCAL_TABLE|G
-|root||root|localhost|PASSWORDLESS_USER_ADMIN|G
-|root||mysql.session|localhost|PERSIST_RO_VARIABLES_ADMIN|G
-|root||root|localhost|PERSIST_RO_VARIABLES_ADMIN|G
-|root||root|localhost|PROCESS|G
-|root||root|localhost|REFERENCES|G
-|root||root|localhost|RELOAD|G
-|root||root|localhost|REPLICATION CLIENT|G
-|root||root|localhost|REPLICATION SLAVE|G
-|root||root|localhost|REPLICATION_APPLIER|G
-|root||root|localhost|REPLICATION_SLAVE_ADMIN|G
-|root||root|localhost|RESOURCE_GROUP_ADMIN|G
-|root||root|localhost|RESOURCE_GROUP_USER|G
-|root||root|localhost|ROLE_ADMIN|G
-|root||mysql.infoschema|localhost|SELECT|G
-|root||root|localhost|SELECT|G
-|root||root|localhost|SENSITIVE_VARIABLES_OBSERVER|G
-|root||root|localhost|SERVICE_CONNECTION_ADMIN|G
-|root||mysql.session|localhost|SESSION_VARIABLES_ADMIN|G
-|root||root|localhost|SESSION_VARIABLES_ADMIN|G
-|root||root|localhost|SET_ANY_DEFINER|G
-|root||root|localhost|SHOW DATABASES|G
-|root||root|localhost|SHOW VIEW|G
-|root||root|localhost|SHOW_ROUTINE|G
-|root||mysql.session|localhost|SHUTDOWN|G
-|root||root|localhost|SHUTDOWN|G
-|root||mysql.session|localhost|SUPER|G
-|root||root|localhost|SUPER|G
-|root||mysql.infoschema|localhost|SYSTEM_USER|G
-|root||mysql.session|localhost|SYSTEM_USER|G
-|root||mysql.sys|localhost|SYSTEM_USER|G
-|root||root|localhost|SYSTEM_USER|G
-|root||mysql.session|localhost|SYSTEM_VARIABLES_ADMIN|G
-|root||root|localhost|SYSTEM_VARIABLES_ADMIN|G
-|root||root|localhost|TABLE_ENCRYPTION_ADMIN|G
-|root||root|localhost|TELEMETRY_LOG_ADMIN|G
-|root||root|localhost|TRANSACTION_GTID_TAG|G
-|root||root|localhost|TRIGGER|G
-|root||root|localhost|UPDATE|G
-|root||root|localhost|XA_RECOVER_ADMIN|G
-|root||root|localhost|grant option|G
-performance_schema|schema||mysql.session|localhost|SELECT|G
-sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <ServerVersion>9.1.0</ServerVersion>
     </root>
     <collation id="2" parent="1" name="armscii8_bin">
@@ -1002,7 +909,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Current>1</Current>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2025-08-19.08:17:49</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-08-20.13:54:15</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="information_schema">
@@ -1036,36 +943,39 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="297" parent="288" name="doctrine_migration_versions">
+    <table id="297" parent="288" name="category">
+      <DetailsLevel>3</DetailsLevel>
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </table>
+    <table id="298" parent="288" name="doctrine_migration_versions">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_unicode_ci</CollationName>
     </table>
-    <table id="298" parent="288" name="messenger_messages">
+    <table id="299" parent="288" name="messenger_messages">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_unicode_ci</CollationName>
     </table>
-    <table id="299" parent="288" name="wish">
+    <table id="300" parent="288" name="wish">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_unicode_ci</CollationName>
     </table>
-    <column id="300" parent="297" name="version">
+    <column id="301" parent="297" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StoredType>varchar(191)|0s</StoredType>
-    </column>
-    <column id="301" parent="297" name="executed_at">
-      <Position>2</Position>
-      <StoredType>datetime|0s</StoredType>
-    </column>
-    <column id="302" parent="297" name="execution_time">
-      <Position>3</Position>
       <StoredType>int|0s</StoredType>
     </column>
+    <column id="302" parent="297" name="name">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
+    </column>
     <index id="303" parent="297" name="PRIMARY">
-      <ColNames>version</ColNames>
+      <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
@@ -1074,107 +984,143 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="305" parent="298" name="id">
+    <column id="305" parent="298" name="version">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>varchar(191)|0s</StoredType>
+    </column>
+    <column id="306" parent="298" name="executed_at">
+      <Position>2</Position>
+      <StoredType>datetime|0s</StoredType>
+    </column>
+    <column id="307" parent="298" name="execution_time">
+      <Position>3</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <index id="308" parent="298" name="PRIMARY">
+      <ColNames>version</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="309" parent="298" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="310" parent="299" name="id">
       <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>bigint|0s</StoredType>
     </column>
-    <column id="306" parent="298" name="body">
+    <column id="311" parent="299" name="body">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>longtext|0s</StoredType>
     </column>
-    <column id="307" parent="298" name="headers">
+    <column id="312" parent="299" name="headers">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>longtext|0s</StoredType>
     </column>
-    <column id="308" parent="298" name="queue_name">
+    <column id="313" parent="299" name="queue_name">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>varchar(190)|0s</StoredType>
     </column>
-    <column id="309" parent="298" name="created_at">
+    <column id="314" parent="299" name="created_at">
       <Comment>(DC2Type:datetime_immutable)</Comment>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <column id="310" parent="298" name="available_at">
+    <column id="315" parent="299" name="available_at">
       <Comment>(DC2Type:datetime_immutable)</Comment>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <column id="311" parent="298" name="delivered_at">
+    <column id="316" parent="299" name="delivered_at">
       <Comment>(DC2Type:datetime_immutable)</Comment>
       <Position>7</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <index id="312" parent="298" name="PRIMARY">
+    <index id="317" parent="299" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="313" parent="298" name="IDX_75EA56E0FB7336F0">
+    <index id="318" parent="299" name="IDX_75EA56E0FB7336F0">
       <ColNames>queue_name</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="314" parent="298" name="IDX_75EA56E0E3BD61CE">
+    <index id="319" parent="299" name="IDX_75EA56E0E3BD61CE">
       <ColNames>available_at</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="315" parent="298" name="IDX_75EA56E016BA31DB">
+    <index id="320" parent="299" name="IDX_75EA56E016BA31DB">
       <ColNames>delivered_at</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="316" parent="298" name="PRIMARY">
+    <key id="321" parent="299" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="317" parent="299" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="322" parent="300" name="id">
+      <AutoIncrement>25</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="318" parent="299" name="title">
+    <column id="323" parent="300" name="title">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="319" parent="299" name="description">
+    <column id="324" parent="300" name="description">
       <Position>3</Position>
       <StoredType>longtext|0s</StoredType>
     </column>
-    <column id="320" parent="299" name="author">
+    <column id="325" parent="300" name="author">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>varchar(50)|0s</StoredType>
     </column>
-    <column id="321" parent="299" name="is_published">
+    <column id="326" parent="300" name="is_published">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="322" parent="299" name="date_created">
+    <column id="327" parent="300" name="date_created">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <column id="323" parent="299" name="date_updated">
+    <column id="328" parent="300" name="date_updated">
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StoredType>datetime|0s</StoredType>
     </column>
-    <index id="324" parent="299" name="PRIMARY">
+    <column id="329" parent="300" name="category_id">
+      <Position>8</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <foreign-key id="330" parent="300" name="FK_D7D174C912469DE2">
+      <ColNames>category_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>category</RefTableName>
+    </foreign-key>
+    <index id="331" parent="300" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="325" parent="299" name="PRIMARY">
+    <index id="332" parent="300" name="IDX_D7D174C912469DE2">
+      <ColNames>category_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="333" parent="300" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

@@ -12,6 +12,12 @@
                 <th style="width: 200px;">Titre</th>
                 <td>{{ wish.title }}</td>
             </tr>
+            {% if wish.category %}
+                <tr>
+                    <th>Catégorie</th>
+                    <td>{{ wish.category }}</td>
+                </tr>
+            {% endif %}
             <tr>
                 <th>Description</th>
                 <td>{{ wish.description }}</td>
@@ -23,6 +29,17 @@
             <tr>
                 <th>Date de création</th>
                 <td>{{ wish.dateCreated|date('d/m/Y H:i') }}</td>
+            </tr>
+            <tr>
+                <th>Actions</th>
+                <td>
+                    <a href="{{ path('wish_update', {id: wish.id}) }}" class="btn btn-warning btn-sm me-2">✏️ Modifier</a>
+
+                    <form method="post" action="{{ path('wish_delete', {id: wish.id}) }}" class="d-inline" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer ce souhait ?')" >
+                        <input type="hidden" name="token" value="{{ csrf_token('delete' ~ wish.id) }}">
+                        <button class="btn btn-danger btn-sm">🗑️ Supprimer</button>
+                    </form>
+                </td>
             </tr>
             </tbody>
         </table>

@@ -10,6 +10,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\String\Slugger\SluggerInterface;
+
 #[Route('/wishes', name: 'wish')]
 final class WishController extends AbstractController
 {
@@ -63,10 +65,46 @@ final class WishController extends AbstractController
             'wish_form' => $form,
         ]);
     }
+
+    #[Route('/update/{id}', name: '_update')]
+    public function update(Wish $wish, Request $request, EntityManagerInterface $em): Response
+    {
+        $form = $this->createForm(WishType::class,$wish); // Création du formulaire pour la création d'une série
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $em->flush(); // Envoi des données en base de données
+
+            $this->addFlash('success', 'Souhait mis à jour avec succès !'); // Message flash de succès
+
+            return $this->redirectToRoute('wish_detail', ['id' => $wish->getId()]); // Redirection vers la liste des souhaits
+        }
+
+        return $this->render('wish/edit.html.twig',[
+            'wish_form' => $form]);
+    }
+
+
+
+
     #[Route('/delete/{id}', name: '_delete', requirements: ['id' => '\d+'])]
-    public function delete(): Response{
+    public function delete (Wish $wish, EntityManagerInterface $em, Request $request):Response
+    {
+
+        if($this->isCsrfTokenValid('delete'.$wish->getId(), $request->get('token'))){
+            $em->remove($wish);
+            $em->flush();
+
+            $this->addFlash('success', 'Le souhait a été supprimé avec succès');
+
+
+        }else{
+            $this->addFlash('danger', 'Suppression impossible');
+        }
+
 
         return $this->redirectToRoute('wish_list');
+
     }
 
 }

@@ -12,6 +12,7 @@
                 <tr>
                     <th>Titre</th>
                     <th>Auteur</th>
+                    <th>Catégorie</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -20,6 +21,7 @@
                     <tr>
                         <td>{{ wish.title }}</td>
                         <td>{{ wish.author }}</td>
+                        <td>{{ wish.category ? wish.category.name : 'Aucune' }}</td>
                         <td>
                             <a href="{{ path('wish_detail', { id: wish.id }) }}" class="btn btn-sm btn-primary">
                                 Voir détail
