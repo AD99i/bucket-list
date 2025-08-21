@@ -16,6 +16,17 @@ class WishRepository extends ServiceEntityRepository
         parent::__construct($registry, Wish::class);
     }
 
+    //requete personnalisée pour optmiser les reqetes
+    public function findWishesWithCategory(): array
+    {
+        return $this->createQueryBuilder('w')
+            ->select('w', 'c')
+            ->leftJoin('w.category', 'c')
+            ->orderBy('w.id', 'ASC')
+            ->getQuery()
+            ->getResult();
+    }
+
     //    /**
     //     * @return WishFixtures[] Returns an array of WishFixtures objects
     //     */

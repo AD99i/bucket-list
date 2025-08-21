@@ -7,7 +7,10 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
+
 #[ORM\Entity(repositoryClass: CategoryRepository::class)]
+
+
 class Category
 {
     #[ORM\Id]
@@ -16,6 +19,7 @@ class Category
     private ?int $id = null;
 
     #[ORM\Column(length: 50,unique: true, nullable: false)]
+    #[ORM\Assert\NotBlank]
     private ?string $name = null;
 
     /**

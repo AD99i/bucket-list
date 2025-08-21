@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7beaf0d-5d8d-45d2-95c7-aa63f8a05d79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/wish/edit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e6f5241-cb9f-41ac-a8aa-507186bd30fa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8e6f5241-cb9f-41ac-a8aa-507186bd30fa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20250813142202.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/WishController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WishController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Wish.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Wish.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/WishType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/WishType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/wish/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wish/detail.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/wish/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wish/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/WishRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/WishRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/wish/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wish/edit.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +224,8 @@
       <workItem from="1755594710064" duration="106000" />
       <workItem from="1755595040261" duration="1248000" />
       <workItem from="1755610515467" duration="93000" />
-      <workItem from="1755697420890" duration="3793000" />
+      <workItem from="1755697420890" duration="4440000" />
+      <workItem from="1755760186130" duration="1980000" />
     </task>
     <servers />
   </component>
