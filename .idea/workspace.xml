@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7beaf0d-5d8d-45d2-95c7-aa63f8a05d79" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/WishController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WishController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/WishRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/WishRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/wish/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wish/edit.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="b7beaf0d-5d8d-45d2-95c7-aa63f8a05d79" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +217,7 @@
       <workItem from="1755595040261" duration="1248000" />
       <workItem from="1755610515467" duration="93000" />
       <workItem from="1755697420890" duration="4440000" />
-      <workItem from="1755760186130" duration="1980000" />
+      <workItem from="1755760186130" duration="2915000" />
     </task>
     <servers />
   </component>
